@@ -1,4 +1,6 @@
 import React from 'react';
+import { Contact } from '../models/contact.class';
+import PropTypes from 'prop-types';
 
 const ComponentB = ({ contact }) => {
   return (
@@ -12,6 +14,10 @@ const ComponentB = ({ contact }) => {
       </h3>
     </div>
   );
+};
+
+ComponentB.propTypes = {
+  contact: PropTypes.instanceOf(Contact),
 };
 
 export default ComponentB;

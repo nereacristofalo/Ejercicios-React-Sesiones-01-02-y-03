@@ -8,10 +8,18 @@ const ComponentA = () => {
   );
 
   const cambioDeEstado = () => {
-    setContact((prevContact) => ({
-      ...prevContact,
-      isOnline: !prevContact.isOnline,
-    }));
+    setContact(
+      new Contact(
+        'Nerea',
+        'Cristofalo',
+        'nmcristofalo@gmail.com',
+        !myContact.isOnline
+      )
+    );
+    // setContact((prevContact) => ({
+    //   ...prevContact,
+    //   isOnline: !prevContact.isOnline,
+    // }));
     // setContact((prevContact) => ({
     //   name: prevContact.name,
     //   lastName: prevContact.lastName,
