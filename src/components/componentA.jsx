@@ -10,22 +10,12 @@ const ComponentA = () => {
   const cambioDeEstado = () => {
     setContact(
       new Contact(
-        'Nerea',
-        'Cristofalo',
-        'nmcristofalo@gmail.com',
+        myContact.name,
+        myContact.lastName,
+        myContact.email,
         !myContact.isOnline
       )
     );
-    // setContact((prevContact) => ({
-    //   ...prevContact,
-    //   isOnline: !prevContact.isOnline,
-    // }));
-    // setContact((prevContact) => ({
-    //   name: prevContact.name,
-    //   lastName: prevContact.lastName,
-    //   email: prevContact.email,
-    //   isOnline: !prevContact.isOnline,
-    // }));
   };
 
   return (
